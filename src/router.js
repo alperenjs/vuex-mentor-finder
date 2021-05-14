@@ -1,11 +1,11 @@
-import { createrRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
-import CoachDetail from './pages/coaches/CoachDetail.vue'
-import CoachesList from './pages/coaches/CoachesList.vue'
-import CoachRegistration from './pages/coaches/CoachRegistration.vue'
-import ContactCoach from './pages/requests/ContactCoach.vue'
-import RequestReceived from './pages/requests/RequestReceived.vue'
-import NotFound from './pages/NotFound.vue'
+import CoachDetail from './pages/coaches/CoachDetail.vue';
+import CoachesList from './pages/coaches/CoachesList.vue';
+import CoachRegistration from './pages/coaches/CoachRegistration.vue';
+import ContactCoach from './pages/requests/ContactCoach.vue';
+import RequestReceived from './pages/requests/RequestReceived.vue';
+import NotFound from './pages/NotFound.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -16,7 +16,7 @@ const router = createRouter({
             { path: 'contact', component: ContactCoach }, // /coaches/c1/contact > nested route
         ]},
         { path: '/register', component: CoachRegistration},
-        { path: '/contact', component: RequestReceived},
+        { path: '/requests', component: RequestReceived},
         { path: '/:notFound(.*)', component: NotFound},
     ]
 });
