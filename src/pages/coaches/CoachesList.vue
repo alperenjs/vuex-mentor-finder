@@ -6,9 +6,7 @@
     <base-card>
       <div class="controls">
         <base-button mode="outline">Refresh</base-button>
-        <base-button v-if="!isCoach" link to="/register"
-          >Register as Coach</base-button
-        >
+        <base-button v-if="!isCoach" link to="/register">Register as Coach</base-button>
       </div>
       <ul v-if="hasCoaches">
         <coach-item
